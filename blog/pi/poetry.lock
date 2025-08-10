@@ -1534,20 +1534,20 @@ format = ["fqdn", "idna", "isoduration", "jsonpointer (>1.13)", "rfc3339-validat
 format-nongpl = ["fqdn", "idna", "isoduration", "jsonpointer (>1.13)", "rfc3339-validator", "rfc3986-validator (>0.1.0)", "uri-template", "webcolors (>=1.11)"]
 
 [[package]]
-name = "jsonschema-spec"
-version = "0.2.4"
+name = "jsonschema-path"
+version = "0.3.4"
 description = "JSONSchema Spec with object-oriented paths"
 optional = false
-python-versions = ">=3.8.0,<4.0.0"
+python-versions = "<4.0.0,>=3.8.0"
 files = [
-    {file = "jsonschema_spec-0.2.4-py3-none-any.whl", hash = "sha256:e6dcf7056734ec6854f7888da6c08ce6c421f28aeeddce96bb90de0fb6d711ef"},
-    {file = "jsonschema_spec-0.2.4.tar.gz", hash = "sha256:873e396ad1ba6edf9f52d6174c110d4fafb7b5f5894744246a53fe75e5251ec2"},
+    {file = "jsonschema_path-0.3.4-py3-none-any.whl", hash = "sha256:f502191fdc2b22050f9a81c9237be9d27145b9001c55842bece5e94e382e52f8"},
+    {file = "jsonschema_path-0.3.4.tar.gz", hash = "sha256:8365356039f16cc65fddffafda5f58766e34bebab7d6d105616ab52bc4297001"},
 ]
 
 [package.dependencies]
 pathable = ">=0.4.1,<0.5.0"
 PyYAML = ">=5.1"
-referencing = ">=0.28.0,<0.31.0"
+referencing = "<0.37.0"
 requests = ">=2.31.0,<3.0.0"
 
 [[package]]
@@ -2674,34 +2674,34 @@ rfc3339-validator = "*"
 
 [[package]]
 name = "openapi-spec-validator"
-version = "0.6.0"
+version = "0.7.2"
 description = "OpenAPI 2.0 (aka Swagger) and OpenAPI 3 spec validator"
 optional = false
-python-versions = ">=3.8.0,<4.0.0"
+python-versions = "<4.0.0,>=3.8.0"
 files = [
-    {file = "openapi_spec_validator-0.6.0-py3-none-any.whl", hash = "sha256:675f1a3c0d0d8eff9116694acde88bcd4613a95bf5240270724d9d78c78f26d6"},
-    {file = "openapi_spec_validator-0.6.0.tar.gz", hash = "sha256:68c4c212c88ef14c6b1a591b895bf742c455783c7ebba2507abd7dbc1365a616"},
+    {file = "openapi_spec_validator-0.7.2-py3-none-any.whl", hash = "sha256:4bbdc0894ec85f1d1bea1d6d9c8b2c3c8d7ccaa13577ef40da9c006c9fd0eb60"},
+    {file = "openapi_spec_validator-0.7.2.tar.gz", hash = "sha256:cc029309b5c5dbc7859df0372d55e9d1ff43e96d678b9ba087f7c56fc586f734"},
 ]
 
 [package.dependencies]
 jsonschema = ">=4.18.0,<5.0.0"
-jsonschema-spec = ">=0.2.3,<0.3.0"
+jsonschema-path = ">=0.3.1,<0.4.0"
 lazy-object-proxy = ">=1.7.1,<2.0.0"
 openapi-schema-validator = ">=0.6.0,<0.7.0"
 
 [[package]]
 name = "openapi3-parser"
-version = "1.1.14"
+version = "1.1.21"
 description = "OpenAPI v3 parser"
 optional = false
 python-versions = "*"
 files = [
-    {file = "openapi3-parser-1.1.14.tar.gz", hash = "sha256:d70fe00cfd9c2d943ee6dfd92c3702822567cc11364e4ab1fbbf30a846148374"},
-    {file = "openapi3_parser-1.1.14-py3-none-any.whl", hash = "sha256:e1e003246deb5e690412722d4eb73e775124c31d761821eab38f4e741355ccfd"},
+    {file = "openapi3_parser-1.1.21-py3-none-any.whl", hash = "sha256:b30f530bc22c0b7b87814eedf957e2b1b507ad914380661114d34f345f103227"},
+    {file = "openapi3_parser-1.1.21.tar.gz", hash = "sha256:6ad5a4c307fdabb371c3191dc608968b68db433238f218591ff825c8d28aaa75"},
 ]
 
 [package.dependencies]
-openapi-spec-validator = "0.6.0"
+openapi-spec-validator = ">=0.7.1"
 prance = ">=0.20.2"
 
 [[package]]
